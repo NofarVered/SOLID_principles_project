@@ -1,12 +1,13 @@
 "use strict";
 class Mammal extends Animal {
-    constructor(_name, _food, _durationOfPregnancy) {
-        super(_name, _food);
+    constructor(_name, _food, _durationOfPregnancy, _type) {
+        super(_name, _food, _type);
         this._name = _name;
         this._food = _food;
         this._durationOfPregnancy = _durationOfPregnancy;
+        this._type = _type;
     }
     toString() {
-        return `Mammal Data:\n ${super.toString()} \n Duration of Pregnancy: ${this._durationOfPregnancy}`;
+        return `Animal data:\n ${super.toString()} \n Mammal data: ${this._durationOfPregnancy}`;
     }
 }

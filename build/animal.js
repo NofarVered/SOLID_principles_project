@@ -1,8 +1,9 @@
 "use strict";
 class Animal {
-    constructor(_name, _food) {
+    constructor(_name, _food, _type) {
         this._name = _name;
         this._food = _food;
+        this._type = _type;
     }
     feedMe(currentQuantity) {
         const newQuantity = this._food.dailyQuantity - currentQuantity;
@@ -15,6 +16,6 @@ class Animal {
         return `The quantity now is ${this._food.dailyQuantity}`;
     }
     toString() {
-        return ` ${this._name} , ${this._food}`;
+        return ` ${this._name} , ${this._type},  ${this._food}`;
     }
 }

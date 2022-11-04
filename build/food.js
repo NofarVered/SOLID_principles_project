@@ -1,11 +1,11 @@
 "use strict";
 class Food {
-    constructor(_type, _dailyQuantity) {
-        this._type = _type;
+    constructor(_foodType, _dailyQuantity) {
+        this._foodType = _foodType;
         this._dailyQuantity = _dailyQuantity;
     }
-    get type() {
-        return this._type;
+    get foodType() {
+        return this._foodType;
     }
     get dailyQuantity() {
         return this._dailyQuantity;
@@ -14,6 +14,6 @@ class Food {
         this._dailyQuantity = currentQuantity;
     }
     toString() {
-        return `Food data: ${this._dailyQuantity} , ${this._type} \n`;
+        return `Food data: ${this._dailyQuantity} , ${this._foodType} \n`;
     }
 }
