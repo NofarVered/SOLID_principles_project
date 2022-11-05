@@ -47,12 +47,11 @@ class Zoo {
         }
     }
     toString() {
-        let animalsStr = "[";
+        let animalsStr = " ";
         for (let animal of this.animals) {
-            animalsStr += `{\n${animal.toString()} \n},\n`;
+            animalsStr += `${animal.toString()} . \n`;
         }
-        animalsStr += "]\n";
-        let totalAnimals = `Total Animals: ${this.animals.length}`;
-        return animalsStr + totalAnimals;
+        animalsStr += "\n . ";
+        return animalsStr;
     }
 }
