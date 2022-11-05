@@ -1,7 +1,9 @@
 abstract class Animal {    
     constructor(protected _name: string, protected _food: Food, protected _type: string, 
       ) {}
-    
+    public get food ():Food{
+      return this._food;
+    }
     public feedMe(currentQuantity: number): string {
       const newQuantity = this._food.dailyQuantity-currentQuantity;
       this._food.dailyQuantity=newQuantity;
