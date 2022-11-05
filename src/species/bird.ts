@@ -7,7 +7,11 @@ class Bird extends Animal {
     ) {
       super(_name, _food, _type);
     }
-    
+
+    public get wingSpan(): number{
+      return this._wingSpan;
+    }
+
     toString(): string {
       return `Animal data:\n ${super.toString()} \n Bird data: ${
         this._wingSpan
