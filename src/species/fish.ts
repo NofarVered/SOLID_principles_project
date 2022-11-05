@@ -1,9 +1,9 @@
 class Fish extends Animal {
     constructor(
       protected _name: string,
+      protected _type: string, 
       protected _food: Food,
       protected _lowestDepth: number,
-      protected _type: string, 
     ) {
       super(_name, _food, _type);
     }

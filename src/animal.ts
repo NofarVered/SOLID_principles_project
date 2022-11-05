@@ -1,4 +1,4 @@
-abstract class Animal {
+abstract class Animal {    
     constructor(protected _name: string, protected _food: Food, protected _type: string, 
       ) {}
     
