@@ -7,9 +7,11 @@ class Mammal extends Animal {
     ) {
       super(_name, _food, _type);
     }
+
     public get durationOfPregnancy(): number{
       return this._durationOfPregnancy;
     }
+    
     toString(): string {
       return `Animal data:\n ${super.toString()} \n Mammal data: ${
         this._durationOfPregnancy

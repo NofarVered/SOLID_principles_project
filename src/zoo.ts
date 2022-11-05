@@ -48,7 +48,15 @@ class Zoo {
         let feedQuentity=animal.food.dailyQuantity*(days) ;
         animal.feedMe(feedQuentity);
       }
-
     }    
+    toString(): string {
+      let animalsStr = " ";
+      for (let animal of this.animals) {
+        animalsStr += `${animal.toString()} . \n`;
+      }
+      animalsStr += "\n . ";
+      return animalsStr;
+    }
+  
 }
 
